@@ -1,16 +1,13 @@
 # finekube_machinetest
 
-A new Flutter project.
+Features included:
 
-## Getting Started
+- UI Cloning
+- Pagination
+- API integration
 
-This project is a starting point for a Flutter application.
+## Deatils about project
 
-A few resources to get you started if this is your first Flutter project:
+This project includes API integration, Pagination and UI cloning for the given machine test. It uses CustomScrollView for the custom views and used GetX for state management. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[APK File](https://drive.google.com/file/d/1RKWr9WfPzHY3poU4MLaWMIWEEBh3KvB-/view?usp=sharing)
