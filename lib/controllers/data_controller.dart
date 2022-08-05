@@ -8,23 +8,17 @@ class DataController extends GetxController {
   final DataFetch dataFetch = Get.put(DataFetch());
 
   fetchDebts() async {
-    
-      var response = await Get.find<DataFetch>().fetchData(pageNumber.value);
+    var response = await Get.find<DataFetch>().fetchData(pageNumber.value);
     if(pageNumber.value == '1') {
       dataCopy.value = response['data'];
       data.value = response['data'];
-    }else{
-      dataCopy.value.addAll(response['data']);
-      print(dataCopy.value);
-      data.value.addAll(response['data']);
+      update();
     }
-    // data.clear();
-    // data.addAll(dataCopy.value);
-    //data.value = response['data'];
-  }
-
-  incrementPagination() {
-    pageNumber.value = (int.parse(pageNumber.value) + 1).toString();
-    
+    else{
+      dataCopy.value.addAll(response['data']);
+      data.value.addAll(response['data']);
+      update();
+    }
+    update();
   }
 }
